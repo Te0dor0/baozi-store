@@ -1,16 +1,8 @@
 # CENTRO UNIVERSITÁRIO INTERNACIONAL UNINTER
 
-## ESCOLA SUPERIOR POLITÉCNICA
-
-### NOME DO CURSO
-
 ## DESENVOLVIMENTO WEB BACK END
 
 ### ATIVIDADE PRÁTICA
-
-## DIEGO SILVA – RU: 4751079
-
-### SUA CIDADE – SEU ESTADO
 
 ### 2026
 
@@ -77,9 +69,7 @@ A API REST da Baozi Store foi desenvolvida utilizando **Java** com **Spring Boot
 
 ### Endpoints Implementados:
 
-Todos os endpoints estão acessíveis sob o prefixo `/api`. Por exemplo, para clientes, os endpoints são `/api/clientes`.
-
-#### **Endpoints para Cliente (`/api/clientes`)**
+#### **Endpoints para Cliente (`/clientes`)**
 
 | Método | URL             | Descrição                               |
 | :----- | :-------------- | :-------------------------------------- |
@@ -89,7 +79,7 @@ Todos os endpoints estão acessíveis sob o prefixo `/api`. Por exemplo, para cl
 | `PUT`  | `/clientes/{id}` | Atualiza um cliente existente pelo ID   |
 | `DELETE` | `/clientes/{id}` | Exclui um cliente pelo ID               |
 
-#### **Endpoints para Produto (`/api/produtos`)**
+#### **Endpoints para Produto (`/produtos`)**
 
 | Método | URL             | Descrição                               |
 | :----- | :-------------- | :-------------------------------------- |\n| `POST` | `/produtos`     | Cria um novo produto                    |
@@ -98,7 +88,7 @@ Todos os endpoints estão acessíveis sob o prefixo `/api`. Por exemplo, para cl
 | `PUT`  | `/produtos/{id}` | Atualiza um produto existente pelo ID   |
 | `DELETE` | `/produtos/{id}` | Exclui um produto pelo ID               |
 
-#### **Endpoints para Pedido (`/api/pedidos`)**
+#### **Endpoints para Pedido (`/pedidos`)**
 
 | Método | URL             | Descrição                               |
 | :----- | :-------------- | :-------------------------------------- |
@@ -118,7 +108,7 @@ Todos os endpoints estão acessíveis sob o prefixo `/api`. Por exemplo, para cl
 
 **Request:**
 ```
-POST http://localhost:8080/api/clientes
+POST http://localhost:8080/clientes
 Content-Type: application/json
 
 {
@@ -140,7 +130,7 @@ Content-Type: application/json
 
 **Request:**
 ```
-POST http://localhost:8080/api/produtos
+POST http://localhost:8080/produtos
 Content-Type: application/json
 
 {
@@ -164,7 +154,7 @@ Content-Type: application/json
 
 **Request:**
 ```
-POST http://localhost:8080/api/pedidos
+POST http://localhost:8080/pedidos
 Content-Type: application/json
 
 {
@@ -188,7 +178,7 @@ Content-Type: application/json
 
 **Request:**
 ```
-GET http://localhost:8080/api/clientes
+GET http://localhost:8080/clientes
 ```
 
 **Response (Status 200):**
@@ -206,7 +196,7 @@ GET http://localhost:8080/api/clientes
 
 **Request:**
 ```
-GET http://localhost:8080/api/clientes/1
+GET http://localhost:8080/clientes/1
 ```
 
 **Response (Status 200):**
@@ -222,7 +212,7 @@ GET http://localhost:8080/api/clientes/1
 
 **Request:**
 ```
-GET http://localhost:8080/api/produtos
+GET http://localhost:8080/produtos
 ```
 
 **Response (Status 200):**
@@ -241,7 +231,7 @@ GET http://localhost:8080/api/produtos
 
 **Request:**
 ```
-GET http://localhost:8080/api/produtos/1
+GET http://localhost:8080/produtos/1
 ```
 
 **Response (Status 200):**
@@ -258,7 +248,7 @@ GET http://localhost:8080/api/produtos/1
 
 **Request:**
 ```
-GET http://localhost:8080/api/pedidos
+GET http://localhost:8080/pedidos
 ```
 
 **Response (Status 200):**
@@ -277,7 +267,7 @@ GET http://localhost:8080/api/pedidos
 
 **Request:**
 ```
-GET http://localhost:8080/api/pedidos/1
+GET http://localhost:8080/pedidos/1
 ```
 
 **Response (Status 200):**
@@ -294,7 +284,7 @@ GET http://localhost:8080/api/pedidos/1
 
 **Request:**
 ```
-DELETE http://localhost:8080/api/clientes/1
+DELETE http://localhost:8080/clientes/1
 ```
 
 **Response (Status 204):**
@@ -306,7 +296,7 @@ No Content
 
 **Request:**
 ```
-GET http://localhost:8080/api/clientes
+GET http://localhost:8080/clientes
 ```
 
 **Response (Status 200):**
